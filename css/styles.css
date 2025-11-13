@@ -26,7 +26,7 @@ html {
 
 img {
   max-width: 100%;
-  border-radius: var(--radius);
+  /* border-radius: var(--radius); */
 }
 
 body {
@@ -39,6 +39,11 @@ body {
   max-width: 1200px;
   font-weight: var(--weight);
 }
+h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  align-self: flex-end;
+}
 header {
   color: var(--White);
   text-transform: uppercase;
@@ -47,25 +52,18 @@ header {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-}
-main {
-  background-color: var(--White);
-  text-align: center;
-  border-bottom: 5px solid #ffd034;
-  border-top: 5px solid #ffd034;
-}
-h1 {
-  font-weight: 300;
-  text-transform: uppercase;
+  /* align-self: flex-end; */
 }
 .logo {
   /* max-width: 350px; */
   display: flex;
   justify-content: space-evenly;
+  /* padding: 2rem; */
+  gap: 0.5rem;
+  padding-top: 1rem;
 }
 /* nav {
-} */
+    } */
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -74,6 +72,7 @@ nav ul {
   justify-content: center;
   flex-flow: row wrap;
   align-items: center;
+  padding-top: 2rem;
 }
 nav a {
   font-family: var(--fonts-one);
@@ -84,6 +83,12 @@ nav a {
   padding: 1rem;
 }
 
+main {
+  background-color: var(--White);
+  text-align: center;
+  border-bottom: 5px solid #ffd034;
+  border-top: 5px solid #ffd034;
+}
 /* INTRO section */
 h2 {
   font-size: 2.5rem;
@@ -96,15 +101,20 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: auto;
-  padding: 1rem;
-  gap: 1rem;
+  padding: 0;
+  align-items: center;
 }
-.text {
-  /*   grid-template-columns: 1fr; */
-  grid-template-rows: 1fr 1fr 1fr;
-  /* text-align: left; */
-  /* font-weight: 300; */
-  /* text-transform: uppercase; */
+/* 
+.intro .img {
+  order: -1;
+} */
+
+.intro .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+  text-align: left;
 }
 .btn {
   background-color: var(--Vegan);
@@ -115,14 +125,18 @@ h2 {
   color: var(--White);
   text-decoration: none;
   border-radius: var(--radius);
-  border: 6px double var(--Sunglow);
+  /* border: 6px double var(--Sunglow);      */
   display: inline-block;
   text-align: center;
+  text-transform: uppercase;
 }
 /* Grid section */
 h3 {
-    font-size: 1.75rem;
-    font-weight: var(--weight);
+  font-size: 1.75rem;
+  font-weight: var(--weight);
+}
+.coffee-card img {
+  border-radius: var(--radius);
 }
 .coffee-grid {
   display: grid;
@@ -142,6 +156,7 @@ h3 {
   padding: 1rem;
   border-radius: var(--radius);
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 footer {
