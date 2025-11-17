@@ -62,6 +62,12 @@ header {
   gap: 1rem;
   padding-top: 1rem;
 }
+
+.logo img {
+  /* max-width: 100%; */
+  height: auto;
+}
+
 /* nav {
     } */
 nav ul {
@@ -104,10 +110,10 @@ h2 {
   padding: 0;
   align-items: center;
 }
-/* 
-.intro .img {
-  order: -1;
-} */
+
+.intro img {
+  display: block;
+}
 
 .intro .text {
   display: flex;
@@ -115,21 +121,23 @@ h2 {
   justify-content: center;
   padding-left: 1rem;
   text-align: left;
+  gap: 1rem; /* adds space between h2, p, and btn automatically... DUH. I blame it on infection & fever LOL */
 }
+
 .btn {
   background-color: var(--Vegan);
   padding: 1rem;
-  margin: auto;
   font-family: var(--fonts-one);
   font-weight: bold;
   color: var(--White);
   text-decoration: none;
   border-radius: var(--radius);
-  /* border: 6px double var(--Sunglow);      */
-  display: inline-block;
+  align-self: flex-start; /* aligns button to the left AUTO because ...flexbox properties */
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 3rem;
 }
+
 /* Grid section */
 h3 {
   font-size: 1.75rem;
