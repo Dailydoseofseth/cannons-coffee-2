@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cannons Coffee - Inquiry</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="./img/logo-nav.webp"
+          alt="Cannons Coffee, Beans of Joy! Est. 2014"
+        />
+        <h1>Cannons Coffee</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" target="_blank">Home</a></li>
+          <li><a href="latte.html" target="_blank">Coffee</a></li>
+          <li><a href="inquiry.html" target="_blank">Inquiry</a></li>
+          <li><a href="login.html" target="_blank">Login</a></li>
+          <li>
+            <a href="https://www.cloudcitycoffee.com/" target="_blank">About</a>
+          </li>
+          <li>
+            <a href="mailto:dailydoseofseth@gmail.com" target="_blank"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form id="form" class="form">
+        <!-- <h2>Cannons Coffee Inquiry</h2> -->
+
+        <!-- Name -->
+        <label for="name">Your Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Annie Cannons"
+          required
+        /><br /><br />
+
+        <!-- Email -->
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="jsmith@nada.com"
+          required
+        /><br /><br />
+
+        <!-- Phone -->
+        <label for="phone">Phone (MUST be 10 characters):</label><br />
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          minlength="10"
+          maxlength="13"
+          size="14"
+          required
+        /><br /><br />
+
+        <!-- Message -->
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="4" cols="40"></textarea
+        ><br /><br />
+
+        <!-- Favorite Ice Cream Flavor -->
+        <label for="flavor">Favorite Ice Cream Flavor:</label><br />
+        <select id="flavor" name="flavor" required>
+          <option value="">--Select Flavor--</option>
+          <option value="chocolate">Chocolate</option>
+          <option value="vanilla">Vanilla</option>
+          <option value="pistachio">Pistachio</option>
+          <option value="other">Other</option></select
+        ><br /><br />
+
+        <!-- Reason for Inquiry -->
+        <fieldset>
+          <legend>What brings you in?</legend>
+          <label
+            ><input type="radio" name="reason" value="buy-coffee" /> Buying
+            Coffee?</label
+          ><br />
+          <label
+            ><input type="radio" name="reason" value="seek-employ" /> Seeking
+            Employment?</label
+          ><br />
+        </fieldset>
+        <br />
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit">Submit</button>
+      </form>
+
+      <div class="container"></div>
+    </main>
+
+    <footer>
+      <img
+        src="https://assets.codepen.io/296057/logo-footer.png"
+        alt="Cannons Coffee, Beans of Joy! Est. 2014"
+      />
+      <p>&copy; 2024 Cannons Coffee. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./custom-inquiry.js"></script>
+  </body>
+</html>

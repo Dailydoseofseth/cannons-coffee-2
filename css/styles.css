@@ -64,7 +64,6 @@ header {
 }
 
 .logo img {
-  /* max-width: 100%; */
   height: auto;
 }
 
@@ -113,6 +112,9 @@ h2 {
 
 .intro img {
   display: block;
+  /* height:fit-content; */
+  /* flex-shrink: 0; */
+  /* max-width: 500px;  */
 }
 
 .intro .text {
@@ -165,6 +167,29 @@ h3 {
   border-radius: var(--radius);
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.submit {
+  background-color: var(--Catalina);
+  color: var(--White);
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.form {
+  background-color: var(--Vegan);
+  padding: 1rem;
+  font-family: var(--fonts-one);
+  font-weight: bold;
+  color: var(--White);
+  text-decoration: none;
+  border-radius: var(--radius);
+  align-self: flex-start; /* aligns button to the left AUTO because ...flexbox properties */
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
 }
 
 footer {
