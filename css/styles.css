@@ -8,6 +8,7 @@
   --Sunglow: #ffd034;
   --White: #ffffff;
   --LightBlue: #cadbf8;
+  --Goldenrod: goldenrod;
   --fonts-one: "Poppins";
   --fonts-two: "Sans Serif";
   --radius: 9px;
@@ -179,7 +180,7 @@ h3 {
 }
 
 .form {
-  background-color: var(--Vegan);
+  background-color: var(--Goldenrod);
   padding: 1rem;
   font-family: var(--fonts-one);
   font-weight: bold;

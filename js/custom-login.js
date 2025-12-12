@@ -1,8 +1,9 @@
-//Create variables for name, email, and password
-//Show each back to the user one by one at first, and then in a template literal sentence
+//Create a login form that shows a welcome message
+//When the user clicks Submit, show the form data in console and a welcome message on the webpage
+//The form will disappear when the message shows on the webpage
 let container = document.querySelector(".container");
-// boilerplate event listener and form saved into JS variable
 let form = document.getElementById("form");
+// boilerplate event listener and form saved into JS variable
 form.addEventListener("submit", onSubmit);
 // submit function
 function onSubmit(event) {
@@ -16,22 +17,12 @@ function onSubmit(event) {
   let name = dataObj.name;
   let email = dataObj.email;
   let password = dataObj.password;
-  // updating the DOM
-  let namePara = document.createElement("p");
-  namePara.textContent = name;
-  container.appendChild(namePara);
-  let emailPara = document.createElement("p");
-  emailPara.textContent = email;
-  container.appendChild(emailPara);
-  let passwordPara = document.createElement("p");
-  passwordPara.textContent = password;
-  container.appendChild(passwordPara);
   // create a message and update the DOM
-  let message = `Welcome back, ${name}! You have successfully logged in with your email ${email}.`;
-  console.log("message", message);
-  let messagePara = document.createElement("p");
-  messagePara.textContent = message;
-  container.appendChild(messagePara);
-  // 	include this at the end
-  form.reset();
+  let message = `Welcome, ${name}! You are logged in!`;
+    console.log("message", message);
+    
+//   // hide the form
+  form.style.display = "none";
+  // show the message on the webpage
+  container.textContent = message;
 }
